@@ -1,0 +1,161 @@
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(/images/background-index.jfif);
+    background-size: cover;
+    background-position: center;
+  }
+  .navbar-index {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 60px;
+    cursor: pointer;
+  }
+  
+  .navbar-index ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .navbar-index ul li a {
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+  }
+  .navbar-index ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  .navbar-index ul li:hover::after {
+    width: 100%;
+  }
+  
+  .content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: rotateY(-50%);
+    text-align: center;
+    color: #ffff;
+  }
+  .content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+  }
+  
+  .content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  
+  dt {
+    float: left;
+    clear: left;
+    width: 200px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  dt::after {
+    content: ":";
+  }
+  
+  dd {
+    margin: 1 1 1 80px;
+    padding: 1 1 0.5em 0;
+  }
+  
+  footer {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+    width: 100%;
+  }
+  
+
+
+  .transfer input {
+    border: 0;
+    border-bottom: 1px solid gray;
+    outline: 0;
+    width: 100%;
+}
+.left-content,
+.right-content{
+  background-color: #f3f3f3;
+    border-radius: 8px;
+    padding: 12px 12px;
+}
+
+.right-content img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.right-content .row a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0px 16px;
+}
+
+.right-content .row a:hover {
+    color: #000;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 0px 8px 8px 40px;
+}
+
+.menu li {
+    list-style-type: none;
+    border-bottom: 1px solid gray;
+    padding: 8px 0px;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    opacity: 0.5;
+}
+
+.clear {
+    overflow: hidden;
+    clear: both;
+}
+
+

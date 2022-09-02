@@ -1,0 +1,15 @@
+{
+    "name": "truonggiangit793/cnpm",
+    "description": "CNPM",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Truonggiangit793\\Cnpm\\": "src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "devcoder-xyz/php-dotenv": "^1.1",
+        "firebase/php-jwt": "^6.1"
+    }
+}
